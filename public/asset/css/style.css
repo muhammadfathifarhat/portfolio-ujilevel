@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/Inter/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('../font/Inter/Inter-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('../font/Inter/Inter-Bold.ttf');
+}
+
+.fw-bold {
+    font-family: 'Inter-Bold';
+}
+
+.fw-medium {
+    font-family: 'Inter-Medium';
+}
+
+body {
+    font-family: 'Inter' !important;
+}
+
+.banner-gradient {
+    background-image: url(../images/markus-spiske-jG8nlwLRZTM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 260px;
+}
+
+#profile {
+    margin-top: -3.5rem;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.mini-profile {
+    width: 42px;
+    height: 42px;
+}
+
+.navbar .nav-link {
+    border-radius: 5px;
+}
+
+.navbar .nav-link.active {
+    font-family: 'Inter-Medium';
+    color: #0d6efd !important;
+    background-color: #F7F6FC !important;
+    border-radius: 5px;
+}
+
+.nav-link:not(.active):hover {
+    background-color: #F7F6FC !important;
+}
+
+.app {
+    margin-left: 260px;
+}
+
+.sidebar .nav-link.active{
+    color: white !important;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.fs-14{
+    font-size: 14px;
+}
+
+.projects svg {
+    transition: 150ms ease-in-out;
+}
+
+.projects:hover svg {
+    transform: translate(2px, -2px);
+}
+
+.image-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.image-container video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.carousel .carousel-indicators{
+    position: static;
+}
+
+/* .carousel-indicators [data-bs-target]{
+    width: auto !important;
+    height: auto !important;
+} */
+
+.carousel-indicators{
+    position: relative !important;
+    width: 100% !important;
+}
+
+.carousel-indicators {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    height: 25% !important;
+    top: 10%;
+}
+
+.carousel-indicators{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1199px) {
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .navbar .nav-link.active {
+        font-family: 'Inter-Medium';
+        color: #0d6efd !important;
+        background-color: transparent !important;
+        border-radius: 5px;
+    }
+
+    .navbar .nav-link:not(.active):hover {
+        background-color: transparent !important;
+    }
+
+    .app {
+        margin-left: 0;
+    }
+}
